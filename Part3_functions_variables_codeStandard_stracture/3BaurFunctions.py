@@ -1,4 +1,4 @@
-def inc_function(x):
+printdef inc_function(x):
     """Increase X by 1"""
 
     x = x + 1

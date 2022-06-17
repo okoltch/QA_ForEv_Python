@@ -33,28 +33,33 @@
 
 
 
-# n = 6
-# for i in range(n):
-#     print("*" * (n - i))
+n = 6
+for i in range(n):
+    print("*" * (n - i))
 
 
 """
 m:starting number of items
-p: incresement of item in 50%
+p: increasement of item in 50%
 n: number of days to multiply
 Write a program that will show how items grow.
 Programm have to show incresement per each da, starting from 1
 and finishing witn n day
 
 """
-# m = 10
-# p = 50
-# n = 6
-#
+m = 10
+p = 50
+n = 6
+
 #
 # for i in range(n):
 #     print(f'{i + 1} {m}')
-#     m = m + m * (p / 100)
+#     m+= m * (p / 100)
+
+for i in range(n):
+    m = m + m * (p / 100)
+    print(f'On the {i} day we have {m} organisms')
+
 
 """ 
 Two numbers are given m and n. Write a program to write all numbers from m to n including 
